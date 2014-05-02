@@ -9,6 +9,7 @@
 
 #import "HelloWorldScene.h"
 #import "IntroScene.h"
+#import "TextTexture.h"
 
 // -----------------------------------------------------------------------
 #pragma mark - HelloWorldScene
@@ -44,7 +45,11 @@
     [self addChild:background];
     
     // Add a sprite
-    _sprite = [CCSprite spriteWithImageNamed:@"Icon-72.png"];
+    CCColor* bColor = [CCColor colorWithRed:1 green:0 blue:1];
+    CCColor* fColor = [CCColor colorWithRed:0 green:1 blue:0];
+    TextTexture* textTexture = [[TextTexture alloc] initWithText:@"中文" backgroundColor:bColor foregroundColor:fColor];
+    _sprite = [CCSprite spriteWithTexture:textTexture];
+    //_sprite = [CCSprite spriteWithImageNamed:@"Icon-72.png"];
     _sprite.position  = ccp(self.contentSize.width/2,self.contentSize.height/2);
     [self addChild:_sprite];
     

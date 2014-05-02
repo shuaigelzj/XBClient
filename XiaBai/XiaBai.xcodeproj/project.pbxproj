@@ -212,6 +212,8 @@
 		7FE077E81913887400EE0471 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE077E71913887400EE0471 /* AppDelegate.m */; };
 		7FE077EB1913887400EE0471 /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE077EA1913887400EE0471 /* HelloWorldScene.m */; };
 		7FE077EE1913887500EE0471 /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE077ED1913887500EE0471 /* IntroScene.m */; };
+		7FE077FA191389F500EE0471 /* TextTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE077F9191389F500EE0471 /* TextTexture.m */; };
+		7FE077FE19138A2400EE0471 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE077FD19138A2400EE0471 /* GameScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -653,6 +655,10 @@
 		7FE077EA1913887400EE0471 /* HelloWorldScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloWorldScene.m; path = Classes/HelloWorldScene.m; sourceTree = "<group>"; };
 		7FE077EC1913887400EE0471 /* IntroScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IntroScene.h; path = Classes/IntroScene.h; sourceTree = "<group>"; };
 		7FE077ED1913887500EE0471 /* IntroScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IntroScene.m; path = Classes/IntroScene.m; sourceTree = "<group>"; };
+		7FE077F8191389F500EE0471 /* TextTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextTexture.h; path = Classes/Texture/TextTexture.h; sourceTree = "<group>"; };
+		7FE077F9191389F500EE0471 /* TextTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextTexture.m; path = Classes/Texture/TextTexture.m; sourceTree = "<group>"; };
+		7FE077FC19138A2400EE0471 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Classes/Scene/GameScene.h; sourceTree = "<group>"; };
+		7FE077FD19138A2400EE0471 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameScene.m; path = Classes/Scene/GameScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1540,6 +1546,8 @@
 		7FE077E51913887400EE0471 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7FE077FB191389FD00EE0471 /* Scene */,
+				7FE077F7191389C600EE0471 /* Texture */,
 				7FE077E61913887400EE0471 /* AppDelegate.h */,
 				7FE077E71913887400EE0471 /* AppDelegate.m */,
 				7FE077E91913887400EE0471 /* HelloWorldScene.h */,
@@ -1548,6 +1556,24 @@
 				7FE077ED1913887500EE0471 /* IntroScene.m */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		7FE077F7191389C600EE0471 /* Texture */ = {
+			isa = PBXGroup;
+			children = (
+				7FE077F8191389F500EE0471 /* TextTexture.h */,
+				7FE077F9191389F500EE0471 /* TextTexture.m */,
+			);
+			name = Texture;
+			sourceTree = "<group>";
+		};
+		7FE077FB191389FD00EE0471 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				7FE077FC19138A2400EE0471 /* GameScene.h */,
+				7FE077FD19138A2400EE0471 /* GameScene.m */,
+			);
+			name = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1768,11 +1794,13 @@
 				7FE076A01913887200EE0471 /* NSAttributedString+CCAdditions.m in Sources */,
 				7FE077621913887400EE0471 /* CCBKeyframe.m in Sources */,
 				7FE0771C1913887300EE0471 /* CCControlTextureFactory.m in Sources */,
+				7FE077FA191389F500EE0471 /* TextTexture.m in Sources */,
 				7FE075A11913887000EE0471 /* CCAnimationCache.m in Sources */,
 				7FE077251913887300EE0471 /* CCTableView.m in Sources */,
 				7FE077E81913887400EE0471 /* AppDelegate.m in Sources */,
 				7FE075B81913887100EE0471 /* CCDrawingPrimitives.m in Sources */,
 				7FE076A91913887200EE0471 /* TGAlib.m in Sources */,
+				7FE077FE19138A2400EE0471 /* GameScene.m in Sources */,
 				7FE076751913887200EE0471 /* UITouch+CC.m in Sources */,
 				7FE077531913887400EE0471 /* utility.c in Sources */,
 				7FE076B21913887200EE0471 /* ZipUtils.m in Sources */,
